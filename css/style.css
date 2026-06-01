@@ -237,6 +237,12 @@ main { padding-top: var(--header-h); }
   gap: 2.5rem;
   align-items: center;
 }
+@media (max-width: 767px) {
+  /* On mobile, swap so about-content sits above the photo —
+     prevents hero-photo and about-photo from stacking back-to-back. */
+  .about-content { order: 1; }
+  .about-photo   { order: 2; }
+}
 .about-photo {
   max-width: 380px;
   justify-self: start;
