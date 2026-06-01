@@ -65,7 +65,7 @@
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
-  // Contact form — async submit to Formspree
+  // Contact form – async submit to Formspree
   var form = document.querySelector('.contact-form');
   if (form) {
     var status = form.querySelector('.form-status');
@@ -75,7 +75,7 @@
 
       var action = form.getAttribute('action') || '';
       if (action.indexOf('YOUR_ID') !== -1) {
-        status.textContent = 'Form endpoint not configured yet — please reach out via email or Telegram.';
+        status.textContent = 'Form endpoint not configured yet – please reach out via email or Telegram.';
         status.className = 'form-status is-error';
         return;
       }
@@ -92,7 +92,7 @@
         .then(function (res) {
           if (res.ok) {
             form.reset();
-            status.textContent = 'Thanks — your message has been sent.';
+            status.textContent = 'Thanks – your message has been sent.';
             status.className = 'form-status is-success';
           } else {
             return res.json().then(function (body) {

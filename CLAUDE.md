@@ -1,4 +1,4 @@
-# karina-cv — Personal Resume Website
+# karina-cv – Personal Resume Website
 
 > A minimalist static personal website for Karina Malyshkina (Head of AI / Team Lead), showcasing her experience, skills and contact info for potential employers and clients.
 
@@ -10,18 +10,18 @@
 - [ ] Production-ready
 - [ ] Deployed
 
-**Current stage:** Building MVP — static HTML/CSS/JS, deploy to GitHub Pages, then custom domain.
+**Current stage:** Building MVP – static HTML/CSS/JS, deploy to GitHub Pages, then custom domain.
 
 ---
 
 ## Business Context
 
 ### Problem
-Karina needs a professional online presence beyond a PDF resume — a link she can share with recruiters and potential clients that makes a strong first impression and is easy to find.
+Karina needs a professional online presence beyond a PDF resume – a link she can share with recruiters and potential clients that makes a strong first impression and is easy to find.
 
 ### Users
-- Recruiters and hiring managers — primary audience
-- Potential clients / partners — secondary
+- Recruiters and hiring managers – primary audience
+- Potential clients / partners – secondary
 - Expected traffic: low (tens of visitors/month), no scalability concerns
 - Scenario: someone receives a link, opens it, browses in 1–3 minutes, contacts via Telegram or email
 
@@ -36,14 +36,14 @@ Karina needs a professional online presence beyond a PDF resume — a link she c
 ## Functional Requirements
 
 ### Must have (MVP)
-1. **Hero section** — name, title, one-liner summary, one photo, links to Telegram and email
-2. **About / Summary section** — short bio text, second photo
-3. **Work Experience section** — timeline of positions with company, role, dates, bullet points of achievements
-4. **Education section** — three entries (University of Vienna MSc, HSE BSc, MSU)
-5. **Skills section** — grouped: Technical skills, Languages
-6. **Contact section** — contact form (Formspree) + direct links to Telegram (`@kmalyshkina`) and email (`karinamalyskina@gmail.com`); third photo used here or in About
-7. **Responsive layout** — works well on mobile and desktop
-8. **Smooth scroll navigation** — fixed top nav with anchor links to sections
+1. **Hero section** – name, title, one-liner summary, one photo, links to Telegram and email
+2. **About / Summary section** – short bio text, second photo
+3. **Work Experience section** – timeline of positions with company, role, dates, bullet points of achievements
+4. **Education section** – three entries (University of Vienna MSc, HSE BSc, MSU)
+5. **Skills section** – grouped: Technical skills, Languages
+6. **Contact section** – contact form (Formspree) + direct links to Telegram (`@kmalyshkina`) and email (`karinamalyskina@gmail.com`); third photo used here or in About
+7. **Responsive layout** – works well on mobile and desktop
+8. **Smooth scroll navigation** – fixed top nav with anchor links to sections
 
 ### Should have (v1.0)
 1. Subtle scroll animations (fade-in on section enter)
@@ -60,16 +60,16 @@ Karina needs a professional online presence beyond a PDF resume — a link she c
 
 ## Tech Stack
 
-### Frontend (static only — no backend)
-- **HTML5** — semantic markup
-- **CSS3** — custom properties (CSS vars), Flexbox/Grid, no frameworks
-- **JavaScript** — vanilla JS only, no build step required
-- **Fonts** — Google Fonts (Inter or similar clean sans-serif)
-- **Icons** — inline SVG or a lightweight icon set (e.g. Lucide via CDN)
+### Frontend (static only – no backend)
+- **HTML5** – semantic markup
+- **CSS3** – custom properties (CSS vars), Flexbox/Grid, no frameworks
+- **JavaScript** – vanilla JS only, no build step required
+- **Fonts** – Google Fonts (Inter or similar clean sans-serif)
+- **Icons** – inline SVG or a lightweight icon set (e.g. Lucide via CDN)
 
 ### External Services
-- **Formspree** (https://formspree.io) — contact form submissions → email, free tier (50 submissions/month), no backend needed
-- **GitHub Pages** — hosting, free, deploys from `main` branch or `/docs` folder
+- **Formspree** (https://formspree.io) – contact form submissions → email, free tier (50 submissions/month), no backend needed
+- **GitHub Pages** – hosting, free, deploys from `main` branch or `/docs` folder
 
 ### No backend, no database, no Docker needed.
 
@@ -86,9 +86,9 @@ karina-cv/
 ├── js/
 │   └── main.js         # Scroll animations, nav highlight, form handling
 ├── images/
-│   ├── hero.jpg        # Photo 1 (IMG04386) — hero section
-│   ├── about.jpg       # Photo 2 (IMG04500) — about section
-│   └── contact.jpg     # Photo 3 (IMG04326) — contact section
+│   ├── hero.jpg        # Photo 1 (IMG04386) – hero section
+│   ├── about.jpg       # Photo 2 (IMG04500) – about section
+│   └── contact.jpg     # Photo 3 (IMG04326) – contact section
 ├── assets/
 │   └── karina-cv.pdf   # Optional: downloadable PDF resume
 └── README.md
@@ -99,9 +99,9 @@ karina-cv/
 |---------|---------|-------|
 | `#hero` | Name, title, tagline, nav links, CTA button | `hero.jpg` |
 | `#about` | Summary paragraph, key stats (5+ yrs, 10+ products, etc.) | `about.jpg` |
-| `#experience` | Timeline: 5 positions with dates, company, role, bullets | — |
-| `#education` | 3 entries with degree, university, location, thesis | — |
-| `#skills` | Technical skills tags, languages with levels | — |
+| `#experience` | Timeline: 5 positions with dates, company, role, bullets | – |
+| `#education` | 3 entries with degree, university, location, thesis | – |
+| `#skills` | Technical skills tags, languages with levels | – |
 | `#contact` | Formspree form + Telegram / email links | `contact.jpg` |
 
 ### Color Palette (minimalist)
@@ -110,7 +110,7 @@ karina-cv/
 --color-surface:    #F7F7F5;
 --color-text:       #1A1A1A;
 --color-text-muted: #6B6B6B;
---color-accent:     #1A1A1A;   /* black accent — change to a soft tone if desired */
+--color-accent:     #1A1A1A;   /* black accent – change to a soft tone if desired */
 --color-border:     #E5E5E5;
 ```
 
@@ -125,7 +125,7 @@ karina-cv/
 
 ## How to Run Locally
 
-No build step required — just open the file:
+No build step required – just open the file:
 
 ```bash
 git clone https://github.com/<username>/karina-cv.git
@@ -166,7 +166,7 @@ git push origin main
 2. In GitHub Pages settings → Custom domain → enter domain
 3. At DNS provider: add CNAME record pointing to `<username>.github.io`
 4. GitHub auto-provisions HTTPS via Let's Encrypt
-5. No code changes needed — just DNS config
+5. No code changes needed – just DNS config
 
 ### Environments
 | Environment | URL | Notes |
@@ -207,7 +207,7 @@ git push origin main
 All content below is sourced from the provided CV.
 
 ### Hero tagline (suggested)
-> "Team Lead · AI & Automation — turning complex processes into shipped AI products."
+> "Team Lead · AI & Automation – turning complex processes into shipped AI products."
 
 ### Summary (About section)
 5+ years leading AI/LLM automation initiatives. Proven track from identifying high-impact opportunities and building business cases to shipping production-grade AI products. Comfortable owning the full product lifecycle: discovery → cross-functional delivery. Currently finishing an MSc in Data Science at the University of Vienna.
@@ -233,9 +233,9 @@ All content below is sourced from the provided CV.
 
 ## Known Issues & Limitations
 
-1. Formspree free tier limits 50 form submissions/month — sufficient for a personal site; upgrade if needed
+1. Formspree free tier limits 50 form submissions/month – sufficient for a personal site; upgrade if needed
 2. Images should be optimized (WebP, max ~200KB each) before deploy to ensure fast load on mobile
-3. No CMS — content updates require editing `index.html` directly
+3. No CMS – content updates require editing `index.html` directly
 
 ---
 
@@ -244,7 +244,7 @@ All content below is sourced from the provided CV.
 ### MVP tasks
 - [ ] Create `index.html` with all 6 sections
 - [ ] Write `css/style.css` with CSS vars and responsive layout
-- [ ] Write `js/main.js` — scroll animations + form handler
+- [ ] Write `js/main.js` – scroll animations + form handler
 - [ ] Optimize and place 3 photos into `/images/`
 - [ ] Register on Formspree, get endpoint, plug into form
 - [ ] Deploy to GitHub Pages
@@ -261,15 +261,15 @@ All content below is sourced from the provided CV.
 
 ## Decisions (ADR)
 
-### 2025-05 — Static site, no framework
+### 2025-05 – Static site, no framework
 **Context:** Needed to choose between a static HTML/CSS/JS site vs a framework (Next.js, Astro, etc.)
-**Decision:** Plain HTML/CSS/JS — no build step, no dependencies, easiest to deploy on GitHub Pages and hand off.
+**Decision:** Plain HTML/CSS/JS – no build step, no dependencies, easiest to deploy on GitHub Pages and hand off.
 **Alternatives:** Astro (great for static sites but adds complexity), Next.js (overkill for a single-page resume)
-**Consequences:** No hot reload in dev; updates require manual HTML edits — acceptable for a personal CV site that rarely changes.
+**Consequences:** No hot reload in dev; updates require manual HTML edits – acceptable for a personal CV site that rarely changes.
 
-### 2025-05 — Formspree for contact form
+### 2025-05 – Formspree for contact form
 **Context:** Static site can't handle form submissions server-side.
-**Decision:** Formspree free tier — zero backend, works with a plain `<form>` tag, sends to email.
+**Decision:** Formspree free tier – zero backend, works with a plain `<form>` tag, sends to email.
 **Alternatives:** Netlify Forms (requires Netlify hosting), EmailJS (JS-heavy), mailto link (unreliable UX)
 **Consequences:** 50 submissions/month limit; submissions visible in Formspree dashboard + forwarded to email.
 
