@@ -223,10 +223,11 @@ main { padding-top: var(--header-h); }
 }
 .hero-photo img {
   width: 100%;
+  height: auto;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  aspect-ratio: 2 / 3;
   object-fit: cover;
-  aspect-ratio: 3 / 4;
 }
 
 /* ---------- About ---------- */
@@ -242,9 +243,10 @@ main { padding-top: var(--header-h); }
 }
 .about-photo img {
   width: 100%;
+  height: auto;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
 }
 .about-text {
@@ -413,9 +415,10 @@ main { padding-top: var(--header-h); }
 }
 .contact-photo img {
   width: 100%;
+  height: auto;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
 }
 .contact-lead {
