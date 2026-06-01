@@ -1,0 +1,14 @@
+# High-res photo originals (kept locally; web versions hero/about/contact.jpg are committed)
+images/IMG*.jpg
+
+# Claude Code session data
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.log
