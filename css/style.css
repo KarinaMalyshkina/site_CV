@@ -128,6 +128,9 @@ p { margin: 0; }
 /* ---------- Sections ---------- */
 main { padding-top: var(--header-h); }
 
+/* Push anchor-scroll target down so titles clear the fixed header */
+section[id] { scroll-margin-top: calc(var(--header-h) + 0.5rem); }
+
 .section {
   padding: 5rem 0;
 }
@@ -238,10 +241,13 @@ main { padding-top: var(--header-h); }
   align-items: center;
 }
 @media (max-width: 767px) {
-  /* On mobile, swap so about-content sits above the photo —
-     prevents hero-photo and about-photo from stacking back-to-back. */
-  .about-content { order: 1; }
-  .about-photo   { order: 2; }
+  /* On mobile, surface the text first so the section title is what greets
+     the user on anchor scroll, and so the two portraits don't stack
+     back-to-back across hero -> about. */
+  .about-content,
+  .contact-content { order: 1; }
+  .about-photo,
+  .contact-photo   { order: 2; }
 }
 .about-photo {
   max-width: 380px;
